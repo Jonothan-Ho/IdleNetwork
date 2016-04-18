@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.home.ui.MainActivity">
+
+    <com.ipoxiao.idlenetwork.view.AutoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_title">
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="区域"
+            android:textColor="@drawable/selector_text_white_pressed_one"
+            android:textSize="@dimen/size_text_14sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_area"
+            android:background="#FF000000" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_portrait"
+            android:layout_toRightOf="@+id/view"
+            android:checkedButton="@+id/rbtn_one"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_one"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableBottom="@drawable/selector_radio_group_line_white_one"
+                android:gravity="center"
+                android:text="同行交流"
+                android:textColor="@drawable/selector_text_white_checked_one" />
+
+            <RadioButton
+                android:id="@+id/rbtn_two"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableBottom="@drawable/selector_radio_group_line_white_one"
+                android:gravity="center"
+                android:text="同城交易"
+                android:textColor="@drawable/selector_text_white_checked_one" />
+
+        </RadioGroup>
+
+        <com.ipoxiao.idlenetwork.view.CircleImageView xmlns:circle="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/ic_launcher"
+            circle:civ_border_color="@color/text_white"
+            circle:civ_border_width="1dp" />
+        <TextView
+            android:id="@+id/tv_red"
+            android:layout_marginTop="2dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:background="@mipmap/icon_cr"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@mipmap/bg_white_shadow_one" />
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@mipmap/bg_white_shadow_one"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="16dp"
+            android:hint="输入关键词搜索聊天动态"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/size_text_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFF0000" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/layout_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_envelope"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="10dp"
+            android:src="@mipmap/icon_envelope"
+            android:visibility="gone"
+            app:backgroundTint="#EEfa6060"
+            app:borderWidth="0dp"
+            app:elevation="5dp"
+            app:pressedTranslationZ="5dp"
+            app:rippleColor="#ffc74c4c" />
+    </RelativeLayout>
+</LinearLayout>

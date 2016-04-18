@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#FF332e2e</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- ********************** color config *******************-->
+    <color name="grey_oval">#FF747474</color>
+    <color name="white_oval">#FFe5e5e5</color>
+    <color name="grey_divider">#FFe6e6e6</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="bg_title">#FF332e2e</color>
+    <color name="text_grey">#FF999999</color>
+    <color name="text_grey_eighty">#FF808080</color>
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="white_pure">#FFFFFFFF</color>
+    <color name="text_pink">#FFF67979</color>
+    <color name="text_black">#FF4c4c4c</color>
+
+    <!-- *********************************Drawable Config*********************************** -->
+    <drawable name="drawable_bg_title">#FF332e2e</drawable>
+    <drawable name="drawable_white_pure">#FFFFFFFF</drawable>
+    <drawable name="drawable_grey_one">#FFCCCCCC</drawable>
+    <drawable name="drawable_grey_two">#FF999999</drawable>
+    <drawable name="drawable_black_one">#FF4c4c4c</drawable>
+
+</resources>

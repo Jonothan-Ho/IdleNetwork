@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_date"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/size_text_16sp"
+    android:textColor="@color/text_grey"
+    android:text="2015-10-10"
+    android:padding="16dp"
+    android:background="@color/white_pure" />

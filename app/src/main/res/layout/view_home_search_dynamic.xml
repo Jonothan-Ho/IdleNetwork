@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <com.ipoxiao.idlenetwork.view.CircleImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="16dp"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_portrait"
+        android:text="2015-10-10"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/size_text_14sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_portrait"
+        android:layout_toRightOf="@+id/iv_portrait"
+        android:singleLine="true"
+        android:text="快使用双截棍，哼哼哈嘿，快使用双截棍，哼哼哈嘿，快使用双截棍，哼哼哈嘿，"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/size_text_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/iv_portrait"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_divider" />
+
+</RelativeLayout>

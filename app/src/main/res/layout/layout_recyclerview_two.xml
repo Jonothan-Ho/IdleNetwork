@@ -1,0 +1,10 @@
+<com.ipoxiao.idlenetwork.view.AppSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_recyclerview_one" />
+
+</com.ipoxiao.idlenetwork.view.AppSwipeRefreshLayout>
+
+

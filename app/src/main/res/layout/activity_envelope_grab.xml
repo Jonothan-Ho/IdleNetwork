@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_pure"
+    android:orientation="vertical"
+    tools:context="com.ipoxiao.idlenetwork.module.red_envelope.ui.GrabRedEnvelopeActivity">
+
+    <include layout="@layout/view_title_bar_style_one" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ipoxiao.idlenetwork.view.AutoScrollViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="#88000000"
+            android:padding="12dp"
+            android:text="还有0S"
+            android:textColor="@color/text_white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ipoxiao.idlenetwork.module.common.ui.AreaActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@mipmap/bg_white_shadow_one"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="16dp"
+            android:hint="输入关键词搜索地区"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/size_text_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFF0000" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_recyclerview_one" />
+
+
+</LinearLayout>

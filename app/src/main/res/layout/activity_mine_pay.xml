@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_pure"
+    android:orientation="vertical"
+    tools:context="com.ipoxiao.idlenetwork.module.mine.ui.PayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_title">
+
+
+            <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="16dp"
+            android:src="@mipmap/icon_back" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@+id/ibtn_back"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableBottom="@drawable/selector_radio_group_line_white_one"
+                android:gravity="center"
+                android:text="充值次数"
+                android:textColor="@drawable/selector_text_white_checked_one"
+                android:textSize="@dimen/size_text_16sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableBottom="@drawable/selector_radio_group_line_white_one"
+                android:gravity="center"
+                android:text="充值会员"
+                android:textColor="@drawable/selector_text_white_checked_one"
+                android:textSize="@dimen/size_text_16sp" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

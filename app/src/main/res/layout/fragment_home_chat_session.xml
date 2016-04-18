@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ipoxiao.idlenetwork.module.home.ui.fragment.ChatSessionFragment">
+
+    <com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        app:rvp_singlePageFling="true"
+        app:rvp_triggerOffset="0.15" />
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="3dp"
+        card_view:cardElevation="1dp">
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="当前:0"
+            android:textColor="@color/text_grey_eighty"
+            android:textSize="@dimen/size_text_12sp" />
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

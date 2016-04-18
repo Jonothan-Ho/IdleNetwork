@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:easemob="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar_style_one" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/size_text_16sp"
+        android:layout_marginRight="16dp"
+        android:background="@color/grey_divider" />
+
+    <fragment
+        android:id="@+id/fragment_conversation"
+        android:name="com.easemob.easeui.ui.EaseConversationListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/ease_fragment_conversation_list"
+        android:cacheColorHint="#00000000" />
+
+
+</LinearLayout>
